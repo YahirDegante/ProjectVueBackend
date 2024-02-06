@@ -69,3 +69,42 @@ public class Persona {
     
     
 }
+public class FiltroPaginacion {
+    private int page;
+    private int size;
+    private String filter;
+
+    public FiltroPaginacion() {
+    }
+
+    public FiltroPaginacion(int page, int size, String filter) {
+        this.page = page;
+        this.size = size;
+        this.filter = filter;
+    }
+
+    public int getPage() {
+        return page;
+    }
+
+    public void setPage(int page) {
+        this.page = page;
+    }
+
+    public int getSize() {
+        return size;
+    }
+
+    public void setSize(int size) {
+        this.size = size;
+    }
+
+    public String getFilter() {
+        return filter;
+    }
+
+    public void setFilter(String filter) {
+        this.filter = filter;
+    }
+}
+

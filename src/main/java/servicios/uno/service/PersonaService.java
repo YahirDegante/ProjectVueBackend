@@ -41,4 +41,12 @@ public class PersonaService {
         return repo.findAll(page);
     }
 
+    public Page<Persona> PageofPersona(Pageable page, String filter) {
+        if (filter != null && !filter.isEmpty()) {
+            return repo.findByNombreContainingIgnoreCase(filter, page);
+        } else {
+            return repo.findAll(page);
+        }
+    }
+    
 }
